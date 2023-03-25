@@ -29,13 +29,20 @@ import random
 # noun2 = input("Enter the second noun: ")
 
 
-players = [input("enter player 1: "), input("enter player 2: "), input("enter player 3: ")]
-verbs = [input("enter verb 1: "), input("enter verb 2: ")]
-adverbs = [input("enter adverb 1: "), input("enter adverb 2: ")]
-adjectives = [input("enter adjective 1: "), input("enter adjective 2: ")]
-nouns = [input("enter noun 1: "), input("enter noun 2: ")]
+# players = [input("enter player 1: "), input("enter player 2: "), input("enter player 3: ")]
+# verbs = [input("enter verb 1: "), input("enter verb 2: ")]
+# adverbs = [input("enter adverb 1: "), input("enter adverb 2: ")]
+# adjectives = [input("enter adjective 1: "), input("enter adjective 2: ")]
+# nouns = [input("enter noun 1: "), input("enter noun 2: ")]
+
+players = (input("enter some names: ")).split()
+
+verbs = (input("enter some verbs: ")).split()
+adverbs = (input("enter some adverbs: ")).split()
+adjectives = (input("enter some adjectives: ")).split()
+nouns = (input("enter some nouns: ")).split()
+
+story2 = (f"This was {random.choice(players)}'s favourite {random.choice(nouns)}. I think because it was {random.choice(adjectives)}.  I think it was {random.choice(players)}'s before, but they {random.choice(verbs)} {random.choice(adverbs)} too much to keep it around. ")
 
 
-
-story2 = (f"This was {random.choice(players)}'s favouroite {random.choice(nouns)}. I think because it was {random.choice(adjectives)}.  I think it was {random.choice(players)}'s before, but they {random.choice(verbs)} {random.choice(adverbs)} too much to keep it around. ")
 print(story2)
